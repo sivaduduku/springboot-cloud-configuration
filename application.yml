@@ -8,6 +8,11 @@ management:
       show-details: always
 
 spring:
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
   jpa:
     hibernate:
       show-sql: true
