@@ -1,0 +1,11 @@
+server:
+  servlet:
+    context-path: /accounts
+
+spring:
+  application:
+    name: "accounts"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+  profiles:
+    active: "prod"
