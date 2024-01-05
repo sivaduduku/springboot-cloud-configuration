@@ -12,7 +12,7 @@ management:
     health:
       show-details: always
     probes:
-        enabled: true
+      enabled: true
 
 spring:
   rabbitmq:
@@ -21,8 +21,8 @@ spring:
     username: "guest"
     password: "guest"
   jpa:
+    show-sql: true
     hibernate:
-      show-sql: true
       ddl-auto: update
       defer-datasource-initialization: true
       naming:
@@ -31,6 +31,9 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
+    sql:
+      init:
+        mode: always
 
 application:
   security:
